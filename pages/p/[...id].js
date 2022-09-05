@@ -2,8 +2,6 @@ import Head from "next/head";
 import Footer from "../../componentes/footer";
 import Header from "../../componentes/header";
 import { getSession } from "next-auth/react";
-import { useRouter } from "next/router";
-import { useState } from "react";
 
 export default function Homex(props) {
   const laUrl = props.context.id[0];
@@ -33,7 +31,7 @@ export default function Homex(props) {
                       NI solicitar UNIRTE a ningún grupo sin su consentimiento.
                       <br />
                       <br />
-                      Si la temática del grupo <b>ES PARA ADULTOS</b> y{" "}
+                      Si la temática del grupo <b>ES PARA ADULTOS</b> y
                       <b>eres MENOR</b>, NO DEBES ENTRAR BAJO NINGÚN CONCEPTO NI
                       EXCUSA. <br />
                       <br />
@@ -50,17 +48,19 @@ export default function Homex(props) {
                   <br />
                   <h2>¿Sobre este sitio?</h2>
                   - GruposSociales.com (a partir de ahora "ESTE SITIO") es un
-                  buscador de grupos y canales de diferentes redes sociales. <br />
+                  buscador de grupos y canales de diferentes redes sociales.{" "}
+                  <br />
                   - Los usuarios publican anuncios clasificados de grupos de
-                  chat (grupos en la app de redes sociales) en ESTE SITIO para que otros
-                  usuarios puedan unirse. <br />
-                  - ESTE SITIO no tiene relación con las empresas que son propietarias
-                  de las diferentes aplicaciones moviles de redes sociales .
+                  chat (grupos en la app de redes sociales) en ESTE SITIO para
+                  que otros usuarios puedan unirse. <br />
+                  - ESTE SITIO no tiene relación con las empresas que son
+                  propietarias de las diferentes aplicaciones moviles de redes
+                  sociales .
                   <br />
                   - ESTE SITIO no se hace responsable de las conversaciones o
                   contenidos que se comparten en los grupos publicados, aunque
-                  de tener conocimiento de actividades ilegales o no apropiadas, se
-                  bloqueará los anuncios de los grupos implicados.
+                  de tener conocimiento de actividades ilegales o no apropiadas,
+                  se bloqueará los anuncios de los grupos implicados.
                   <br />
                   - ESTE SITIO siempre colaborará con las autoridades para
                   identificar a los autores en caso de denuncias, facilitando
@@ -71,8 +71,8 @@ export default function Homex(props) {
                   <br />
                   <h2>Preámbulo</h2>
                   <br />
-                  Condiciones legales del servicio de GrupoSociales.com a
-                  partir de ahora "ESTE SITIO".
+                  Condiciones legales del servicio de GrupoSociales.com a partir
+                  de ahora "ESTE SITIO".
                   <br />
                   <br />
                   GrupoSociales.com son propiedad de GruposSociales.com.
@@ -87,11 +87,11 @@ export default function Homex(props) {
                   ESTE SITIO no se responsabiliza de la veracidad y seriedad de
                   los grupos publicados, ni que su temática final sea igual a la
                   anunciada, ya que los grupos finales se editan en la
-                  aplicación móviles de redes sociales y esta web no tiene acceso a ellas.
-                  No obstante, eliminará los anuncios fraudulentos, falsos o
-                  ilegales en cuanto ESTE SITIO tenga conocimiento que existen y
-                  tan pronto como le sea posible. Los usuarios o personas
-                  afectadas pueden enviar su alerta al buzón
+                  aplicación móviles de redes sociales y esta web no tiene
+                  acceso a ellas. No obstante, eliminará los anuncios
+                  fraudulentos, falsos o ilegales en cuanto ESTE SITIO tenga
+                  conocimiento que existen y tan pronto como le sea posible. Los
+                  usuarios o personas afectadas pueden enviar su alerta al buzón
                   "info@GrupoSociales.com" para informarnos de cualquier grupo
                   publicado que infringe las normas, realiza actividades
                   ilegales, no legítimas o el anuncio publicado no es cierto.
@@ -99,8 +99,8 @@ export default function Homex(props) {
                   <br />
                   ESTE SITIO no puede garantizar que los enlaces de unión que
                   los usuarios publican funcionen siempre, ya que el propio
-                  usuario puede eliminarlos en su aplicación de redes sociales en
-                  cualquier momento y no avisarnos de ello. No obstante hemos
+                  usuario puede eliminarlos en su aplicación de redes sociales
+                  en cualquier momento y no avisarnos de ello. No obstante hemos
                   implementado un sistema automático para intentar realizar
                   verificaciones automáticas y manuales sobre los grupos
                   publicados.
@@ -301,10 +301,7 @@ export default function Homex(props) {
                   <br />
                   <br />
                   <br />
-                  <h2>
-                    {" "}
-                    Exención de responsabilidad en veracidad de los datos
-                  </h2>
+                  <h2>Exención de responsabilidad en veracidad de los datos</h2>
                   <br />
                   Los anuncios publicados por los Usuarios en ESTE SITIO es
                   única y exclusivamente responsabilidad de los mismos. ESTE
@@ -534,7 +531,9 @@ export default function Homex(props) {
                   <br />
                 </div>
               </div>
-            ) : ''}
+            ) : (
+              "no encontrada"
+            )}
 
             {laUrl === "terminos-y-condiciones" ? (
               <div className="col-md-12">
@@ -592,9 +591,7 @@ export default function Homex(props) {
                     </strong>
                   </p>
                   <ul>
-                    <li>
-                      Identidad: Geyler ("GruposSociales.com")
-                    </li>
+                    <li>Identidad: Geyler ("GruposSociales.com")</li>
                     <li>
                       Dir. postal: Calle 149a, 3001 Berazategui (Argentina).
                     </li>
@@ -722,13 +719,18 @@ export default function Homex(props) {
                   </p>
                   <ul>
                     <li>
-                      La <span className="underline">ejecución de un contrato</span>{" "}
+                      La{" "}
+                      <span className="underline">
+                        ejecución de un contrato
+                      </span>{" "}
                       con Reactiva Internet en relación con la finalidad
                       indicada en el apartado 1 y 2 anteriores.
                     </li>
                     <li>
                       El{" "}
-                      <span className="underline">consentimiento del usuario</span>{" "}
+                      <span className="underline">
+                        consentimiento del usuario
+                      </span>{" "}
                       en relación con las finalidades indicadas en los apartados
                       3 y 4 anteriores.
                     </li>
@@ -907,7 +909,9 @@ export default function Homex(props) {
                   </p>
                 </div>
               </div>
-            ) : ''}
+            ) : (
+              "no encontrada"
+            )}
           </div>
         </main>
         <Footer />
@@ -918,7 +922,10 @@ export default function Homex(props) {
 
 export const getServerSideProps = async (context) => {
   const session = await getSession(context);
-  if(context.query.id[0] != 'politica-de-privacidad' && context.query.id[0] != 'terminos-y-condiciones'){
+  if (
+    context.query.id[0] != "politica-de-privacidad" &&
+    context.query.id[0] != "terminos-y-condiciones"
+  ) {
     return {
       redirect: {
         destination: "/",
