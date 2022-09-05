@@ -23,8 +23,8 @@ export default function Homex(props) {
             {laUrl === "politica-de-privacidad" ? (
               <div className="politicas">
                 <h1>Politica de Privacidad</h1>
-                <div class="col-md-12 text-left">
-                  <h1 class="section-title">GruposSociales.com</h1>
+                <div className="col-md-12 text-left">
+                  <h1 className="section-title">GruposSociales.com</h1>
                   <br />
                   <span>
                     <b>
@@ -537,8 +537,8 @@ export default function Homex(props) {
             ) : ''}
 
             {laUrl === "terminos-y-condiciones" ? (
-              <div class="col-md-12">
-                <h1 class="section-title">
+              <div className="col-md-12">
+                <h1 className="section-title">
                   Política de privacidad de GruposSociales.com
                 </h1>
                 <h1>Resumen</h1>
@@ -583,7 +583,7 @@ export default function Homex(props) {
                 - No leemos, ni de forma automática, los mensajes que envías a
                 través de los formularios de contacto. <br />
                 <br />
-                <div class="epigraph">
+                <div className="epigraph">
                   <h2>Información adicional sobre Protección de Datos</h2>
                   <h2>1. Responsable</h2>
                   <p>
@@ -722,19 +722,19 @@ export default function Homex(props) {
                   </p>
                   <ul>
                     <li>
-                      La <span class="underline">ejecución de un contrato</span>{" "}
+                      La <span className="underline">ejecución de un contrato</span>{" "}
                       con Reactiva Internet en relación con la finalidad
                       indicada en el apartado 1 y 2 anteriores.
                     </li>
                     <li>
                       El{" "}
-                      <span class="underline">consentimiento del usuario</span>{" "}
+                      <span className="underline">consentimiento del usuario</span>{" "}
                       en relación con las finalidades indicadas en los apartados
                       3 y 4 anteriores.
                     </li>
                     <li>
                       El{" "}
-                      <span class="underline">
+                      <span className="underline">
                         interés legítimo del responsable del tratamiento
                       </span>{" "}
                       para la finalidad indicada en el apartado 5 anterior. El
@@ -744,7 +744,7 @@ export default function Homex(props) {
                     </li>
                     <li>
                       El{" "}
-                      <span class="underline">
+                      <span className="underline">
                         cumplimiento de obligaciones
                       </span>{" "}
                       legales aplicables a Reactiva Internet para la finalidad
