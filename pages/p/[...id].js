@@ -252,7 +252,7 @@ export default function Homex(props) {
                   Bloquear, sobrescribir, modificar o copiar, a no ser que ello
                   sea necesario para la correcta utilización de los servicios de
                   los sitios web. Por ejemplo, el copiado mediante tecnologías
-                  de buscador tipo “Robot/Crawler” no es necesario para la
+                  de buscador tipo "Robot/Crawler" no es necesario para la
                   correcta utilización de los servicios del Sitio Web, por lo
                   que está prohibido expresamente.
                   <br />
@@ -270,7 +270,7 @@ export default function Homex(props) {
                   de ESTE SITIO, sus miembros y/o terceros, y deberá responder
                   frente a los mismos en caso de contravenir o incumplir dichas
                   obligaciones y/o que, de cualquier modo  incluida la
-                  introducción o difusión de “virus informáticos” , dañe,
+                  introducción o difusión de "virus informáticos" , dañe,
                   inutilice, sobrecargue, deteriore o impida la normal
                   utilización de los materiales e informaciones contenidos en el
                   Sitio Web, los sistemas de información o los documentos,
@@ -287,7 +287,7 @@ export default function Homex(props) {
                   naturaleza que ESTE SITIO o cualquier tercero pueda sufrir
                   como consecuencia del incumplimiento de cualesquiera de las
                   obligaciones a las que queda sometido por virtud de estas
-                  “Condiciones Generales de Uso” o de la ley en relación con la
+                  "Condiciones Generales de Uso" o de la ley en relación con la
                   Utilización del Servicio. <br />
                   <br />
                   <br />
@@ -868,7 +868,7 @@ export default function Homex(props) {
                     servicio de publicidad de web prestado por Google, Inc., una
                     compañía de Delaware cuya oficina principal está en 1600
                     Amphitheatre Parkway, Mountain View  California , CA 94043,
-                    Estados Unidos  “Google” .
+                    Estados Unidos  "Google" .
                   </p>
 
                   <p>
