@@ -19,10 +19,10 @@ export default function Homex(props) {
         <main className="main">
           <div className="contenedor-paginas-p">
             {laUrl === "politica-de-privacidad" ? (
-              <div className="politicas">
+              <div className='politicas'>
                 <h1>Politica de Privacidad</h1>
-                <div className="col-md-12 text-left">
-                  <h1 className="section-title">GruposSociales.com</h1>
+                <div>
+                  <h1>GruposSociales.com</h1>
                   <br />
                   <span>
                     <b>
@@ -38,20 +38,20 @@ export default function Homex(props) {
                     </b>
                   </span>
                   Si deseas <b>denunciar un grupo</b> publicado envia un correo
-                  electrónico a{" "}
-                  <a href="mailto:info@grupossociales.com">
+                  electrónico a 
+                  <a href='mailto:info@grupossociales.com'>
                     info@grupossociales.com
-                  </a>{" "}
+                  </a> 
                   con la máxima información posible y lo revisaremos lo más
                   rapidamente posible.
                   <br />
                   <br />
                   <h2>¿Sobre este sitio?</h2>
-                  - GruposSociales.com (a partir de ahora "ESTE SITIO") es un
-                  buscador de grupos y canales de diferentes redes sociales.{" "}
+                  - GruposSociales.com  a partir de ahora "ESTE SITIO"  es un
+                  buscador de grupos y canales de diferentes redes sociales. 
                   <br />
                   - Los usuarios publican anuncios clasificados de grupos de
-                  chat (grupos en la app de redes sociales) en ESTE SITIO para
+                  chat  grupos en la app de redes sociales  en ESTE SITIO para
                   que otros usuarios puedan unirse. <br />
                   - ESTE SITIO no tiene relación con las empresas que son
                   propietarias de las diferentes aplicaciones moviles de redes
@@ -109,7 +109,7 @@ export default function Homex(props) {
                   ESTE SITIO no se responsabiliza de daños o perjuicios que
                   puedan producirse por el uso de ESTE SITIO, ni por publicar
                   anuncios de grupos ni por unirse a grupos publicados, ya que
-                  todos los procesos (publicación y unión) son automáticos.
+                  todos los procesos  publicación y unión  son automáticos.
                   <br />
                   <br />
                   ESTE SITIO guarda un registro con: fecha, hora e IP de
@@ -170,7 +170,7 @@ export default function Homex(props) {
                   <br />
                   <br />
                   La función de ESTE SITIO es publicar anuncios de usuarios que
-                  quieren promocionar grupos de chat (grupos en la app Telegram)
+                  quieren promocionar grupos de chat  grupos en la app Telegram 
                   y ofrecer al resto de usuarios la posibilidad de unirse
                   directamente. <br /> <br />
                   ESTE SITIO no controla, ni verifica, ni vigila, ni asegura que
@@ -224,8 +224,8 @@ export default function Homex(props) {
                   del Sitio Web. Asimismo queda prohibida la reproducción,
                   distribución, transmisión, adaptación o modificación, por
                   cualquier medio y en cualquier forma, de los contenidos del
-                  Sitio Web (textos, diseños, gráficos, informaciones, bases de
-                  datos, archivos de sonido y/o imagen, logos, etc.) y demás
+                  Sitio Web  textos, diseños, gráficos, informaciones, bases de
+                  datos, archivos de sonido y/o imagen, logos, etc.  y demás
                   elementos de este Sitio Web, salvo autorización previa de sus
                   legítimos titulares o cuando así resulte permitido por la ley.
                   <br />
@@ -233,15 +233,15 @@ export default function Homex(props) {
                   En especial al usuario le estará prohibido: utilizar
                   contenidos injuriosos o calumniosos, con independencia de que
                   esos contenidos afecten a otros usuarios o a otras personas o
-                  empresas, molestar a otros usuarios (especialmente mediante
-                  spam),utilizar contenidos protegidos legalmente (p. ej. por la
+                  empresas, molestar a otros usuarios especialmente mediante
+                  spam ,utilizar contenidos protegidos legalmente  p. ej. por la
                   legislación relativa a la propiedad intelectual, a marcas, a
-                  patentes, a modelos de utilidad o a modelos estéticos) sin
+                  patentes, a modelos de utilidad o a modelos estéticos  sin
                   tener derecho a ello, o hacer publicidad, ofrecer o distribuir
                   bienes o servicios protegidos legalmente, así como realizar o
                   fomentar acciones contrarias a la libre competencia, incluidas
-                  las encaminadas a la captación de clientes progresiva (como
-                  sistemas en cadena, de bola de nieve o piramidales).
+                  las encaminadas a la captación de clientes progresiva  como
+                  sistemas en cadena, de bola de nieve o piramidales .
                   <br />
                   <br />
                   <h2>Se prohíbe al usuario las siguientes acciones:</h2>
@@ -269,13 +269,13 @@ export default function Homex(props) {
                   habiliten que resulten contrarios a los derechos e intereses
                   de ESTE SITIO, sus miembros y/o terceros, y deberá responder
                   frente a los mismos en caso de contravenir o incumplir dichas
-                  obligaciones y/o que, de cualquier modo (incluida la
-                  introducción o difusión de “virus informáticos”), dañe,
+                  obligaciones y/o que, de cualquier modo  incluida la
+                  introducción o difusión de “virus informáticos” , dañe,
                   inutilice, sobrecargue, deteriore o impida la normal
                   utilización de los materiales e informaciones contenidos en el
                   Sitio Web, los sistemas de información o los documentos,
                   archivos y toda clase de contenidos almacenados en cualquier
-                  equipo informático (hacking) de ESTE SITIO, de sus miembros o
+                  equipo informático  hacking  de ESTE SITIO, de sus miembros o
                   de cualquier usuario. <br />
                   <br />
                   El usuario es consciente de, y acepta voluntariamente, que el
@@ -346,7 +346,7 @@ export default function Homex(props) {
                   www.telegram.org.
                   <br />
                   <br />
-                  Los logos y diseños de ESTE SITIO son propiedad de ESTE SITIO{" "}
+                  Los logos y diseños de ESTE SITIO son propiedad de ESTE SITIO 
                   <br />
                   <br />
                   El logo y aplicación Telegram es propiedad de
@@ -388,7 +388,7 @@ export default function Homex(props) {
                   dirigirse cualquier reclamación o denuncia. <br />
                   <br />
                   La responsabilidad de ESTE SITIO se limita a retirar y
-                  bloquear los anuncios publicados por el usuario denunciado.{" "}
+                  bloquear los anuncios publicados por el usuario denunciado.
                   <br />
                   <br />
                   <br />
@@ -523,7 +523,7 @@ export default function Homex(props) {
                   <br />
                   GruposSociales.com
                   <br />
-                  Dir. postal: Calle 149a, 3001 Berazategui (Argentina).
+                  Dir. postal: Calle 149a, 3001 Berazategui  Argentina .
                   <br />
                   info@gruposociales.com
                   <br />
@@ -542,13 +542,13 @@ export default function Homex(props) {
                 </h1>
                 <h1>Resumen</h1>
                 <h2>Que información recogemos</h2>
-                <b>EMAIL (correo electrónico)</b>
+                <b>EMAIL  correo electrónico </b>
                 <ul>
                   Lo recogemos cuando:
                   <br />
                   - Publicas un anuncio
                   <br />
-                  - Contactas con un anunciante (formulario de contacto) <br />
+                  - Contactas con un anunciante  formulario de contacto  <br />
                   Para que lo usamos:
                   <br />
                   - Si publicas un anuncio, para que puedas editar o eliminar
@@ -582,7 +582,7 @@ export default function Homex(props) {
                 - No leemos, ni de forma automática, los mensajes que envías a
                 través de los formularios de contacto. <br />
                 <br />
-                <div className="epigraph">
+                <div>
                   <h2>Información adicional sobre Protección de Datos</h2>
                   <h2>1. Responsable</h2>
                   <p>
@@ -591,9 +591,9 @@ export default function Homex(props) {
                     </strong>
                   </p>
                   <ul>
-                    <li>Identidad: Geyler ("GruposSociales.com")</li>
+                    <li>Identidad: Geyler  "GruposSociales.com" </li>
                     <li>
-                      Dir. postal: Calle 149a, 3001 Berazategui (Argentina).
+                      Dir. postal: Calle 149a, 3001 Berazategui  Argentina .
                     </li>
                     <li>
                       Contacto Responsable Protección de Datos:
@@ -647,7 +647,7 @@ export default function Homex(props) {
                           inadecuado de nuestros servicios, incluyendo
                           actividades o comportamientos sospechosos o ilegales.
                           Nuestro equipo de seguridad podrá revisar los anuncios
-                          de forma manual.{" "}
+                          de forma manual. 
                         </li>
                       </ul>
                     </li>
@@ -674,8 +674,8 @@ export default function Homex(props) {
                     </li>
                     <li>
                       Prevenir abusos y fraudes en el uso de nuestros servicios
-                      (por ejemplo, actividades fraudulentas, ataques de
-                      denegación de servicios, envío de spam, entre otros).
+                       por ejemplo, actividades fraudulentas, ataques de
+                      denegación de servicios, envío de spam, entre otros .
                     </li>
                     <li>
                       Ceder datos a organismos y autoridades públicas, siempre y
@@ -719,37 +719,28 @@ export default function Homex(props) {
                   </p>
                   <ul>
                     <li>
-                      La{" "}
-                      <span className="underline">
+                      La <span >
                         ejecución de un contrato
-                      </span>{" "}
-                      con Reactiva Internet en relación con la finalidad
+                      </span> con Reactiva Internet en relación con la finalidad
                       indicada en el apartado 1 y 2 anteriores.
                     </li>
                     <li>
-                      El{" "}
-                      <span className="underline">
-                        consentimiento del usuario
-                      </span>{" "}
-                      en relación con las finalidades indicadas en los apartados
+                      El <span >
+                        consentimiento del usuario </span> en relación con las finalidades indicadas en los apartados
                       3 y 4 anteriores.
                     </li>
                     <li>
-                      El{" "}
-                      <span className="underline">
+                      El <span  >
                         interés legítimo del responsable del tratamiento
-                      </span>{" "}
-                      para la finalidad indicada en el apartado 5 anterior. El
+                      </span> para la finalidad indicada en el apartado 5 anterior. El
                       interés legítimo consiste en proteger a los usuarios de
                       los sites de Reactiva Internet de abusos y fraudes en el
                       uso de nuestros servicios.
                     </li>
                     <li>
-                      El{" "}
-                      <span className="underline">
+                      El <span >
                         cumplimiento de obligaciones
-                      </span>{" "}
-                      legales aplicables a Reactiva Internet para la finalidad
+                      </span> legales aplicables a Reactiva Internet para la finalidad
                       indicada en el apartado 6.
                     </li>
                   </ul>
@@ -835,7 +826,7 @@ export default function Homex(props) {
                     usuario. Alternativamente, también puedes dirigirte a
                     nosotros mediante correo postal en la siguiente dirección:
                     Reactiva Internet, Apartado 176, 08505-Muntanyola
-                    (Barcelona), España. Dirigido a Atención al Usuario e
+                     Barcelona , España. Dirigido a Atención al Usuario e
                     indicando en el sobre "Protección de Datos". Recuerda
                     facilitar la mayor información posible sobre tu solicitud:
                     Nombre y apellidos, dirección de correo electrónico que
@@ -873,11 +864,11 @@ export default function Homex(props) {
 
                   <h2>9. Política de privacidad de Google</h2>
                   <p>
-                    Esta página web utiliza Google DoubleClick (DFP/DART), un
+                    Esta página web utiliza Google DoubleClick  DFP/DART , un
                     servicio de publicidad de web prestado por Google, Inc., una
                     compañía de Delaware cuya oficina principal está en 1600
-                    Amphitheatre Parkway, Mountain View (California), CA 94043,
-                    Estados Unidos (“Google”).
+                    Amphitheatre Parkway, Mountain View  California , CA 94043,
+                    Estados Unidos  “Google” .
                   </p>
 
                   <p>
