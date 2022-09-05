@@ -47,7 +47,7 @@ export default function Homex(props) {
                   <br />
                   <br />
                   <h2>¿Sobre este sitio?</h2>
-                  - GruposSociales.com  a partir de ahora "ESTE SITIO"  es un
+                  - GruposSociales.com  a partir de ahora 'ESTE SITIO'  es un
                   buscador de grupos y canales de diferentes redes sociales. 
                   <br />
                   - Los usuarios publican anuncios clasificados de grupos de
@@ -72,7 +72,7 @@ export default function Homex(props) {
                   <h2>Preámbulo</h2>
                   <br />
                   Condiciones legales del servicio de GrupoSociales.com a partir
-                  de ahora "ESTE SITIO".
+                  de ahora 'ESTE SITIO'.
                   <br />
                   <br />
                   GrupoSociales.com son propiedad de GruposSociales.com.
@@ -92,7 +92,7 @@ export default function Homex(props) {
                   fraudulentos, falsos o ilegales en cuanto ESTE SITIO tenga
                   conocimiento que existen y tan pronto como le sea posible. Los
                   usuarios o personas afectadas pueden enviar su alerta al buzón
-                  "info@GrupoSociales.com" para informarnos de cualquier grupo
+                  'info@GrupoSociales.com' para informarnos de cualquier grupo
                   publicado que infringe las normas, realiza actividades
                   ilegales, no legítimas o el anuncio publicado no es cierto.
                   <br />
@@ -129,8 +129,8 @@ export default function Homex(props) {
                   anuncio por email para: gestionar su petición, enviarle el
                   enlace de entrada al grupo. El usuario podrá eliminarlo en
                   cualquier momento siguiendo las instrucciones que enviamos por
-                  email regularmente o bien enviando "BAJA" a nuestro buzón
-                  "info@GrupoSociales.com". <br />
+                  email regularmente o bien enviando 'BAJA' a nuestro buzón
+                  'info@GrupoSociales.com'. <br />
                   <br />
                   ESTE SITIO NO venderá ni cederá el correo electrónico a
                   terceras empresas. <br />
@@ -252,7 +252,7 @@ export default function Homex(props) {
                   Bloquear, sobrescribir, modificar o copiar, a no ser que ello
                   sea necesario para la correcta utilización de los servicios de
                   los sitios web. Por ejemplo, el copiado mediante tecnologías
-                  de buscador tipo "Robot/Crawler" no es necesario para la
+                  de buscador tipo 'Robot/Crawler' no es necesario para la
                   correcta utilización de los servicios del Sitio Web, por lo
                   que está prohibido expresamente.
                   <br />
@@ -270,7 +270,7 @@ export default function Homex(props) {
                   de ESTE SITIO, sus miembros y/o terceros, y deberá responder
                   frente a los mismos en caso de contravenir o incumplir dichas
                   obligaciones y/o que, de cualquier modo  incluida la
-                  introducción o difusión de "virus informáticos" , dañe,
+                  introducción o difusión de 'virus informáticos' , dañe,
                   inutilice, sobrecargue, deteriore o impida la normal
                   utilización de los materiales e informaciones contenidos en el
                   Sitio Web, los sistemas de información o los documentos,
@@ -287,7 +287,7 @@ export default function Homex(props) {
                   naturaleza que ESTE SITIO o cualquier tercero pueda sufrir
                   como consecuencia del incumplimiento de cualesquiera de las
                   obligaciones a las que queda sometido por virtud de estas
-                  "Condiciones Generales de Uso" o de la ley en relación con la
+                  'Condiciones Generales de Uso' o de la ley en relación con la
                   Utilización del Servicio. <br />
                   <br />
                   <br />
@@ -591,7 +591,7 @@ export default function Homex(props) {
                     </strong>
                   </p>
                   <ul>
-                    <li>Identidad: Geyler  "GruposSociales.com" </li>
+                    <li>Identidad: Geyler  'GruposSociales.com' </li>
                     <li>
                       Dir. postal: Calle 149a, 3001 Berazategui  Argentina .
                     </li>
@@ -827,7 +827,7 @@ export default function Homex(props) {
                     nosotros mediante correo postal en la siguiente dirección:
                     Reactiva Internet, Apartado 176, 08505-Muntanyola
                      Barcelona , España. Dirigido a Atención al Usuario e
-                    indicando en el sobre "Protección de Datos". Recuerda
+                    indicando en el sobre 'Protección de Datos'. Recuerda
                     facilitar la mayor información posible sobre tu solicitud:
                     Nombre y apellidos, dirección de correo electrónico que
                     utilizas para la cuenta o portal objeto de tu solicitud.
@@ -868,7 +868,7 @@ export default function Homex(props) {
                     servicio de publicidad de web prestado por Google, Inc., una
                     compañía de Delaware cuya oficina principal está en 1600
                     Amphitheatre Parkway, Mountain View  California , CA 94043,
-                    Estados Unidos  "Google" .
+                    Estados Unidos  'Google' .
                   </p>
 
                   <p>
