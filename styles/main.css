@@ -1,0 +1,116 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex-wrap: nowrap;
+}
+main {
+  flex: 1 1 auto;
+}
+label {
+  padding: 5px 12px 5px 5px;
+  margin: 5px;
+  display: block;
+  background: white;
+  font-size: medium;
+  color: #3a3a3a;
+}
+.label-condiciones {
+  padding: 10px 0px;
+  background: transparent;
+  font-size: large;
+  color: #000000;
+}
+.seleccionar-check {
+  display: flex;
+  flex-wrap: wrap;
+}
+h4 {
+  margin: 25px 5px 10px;
+}
+input[type="text"] {
+  padding: 7px 12px;
+  margin: 5px;
+  box-sizing: border-box;
+  font-size: medium;
+  width: calc(100% - 10px);
+}
+h1 {
+  margin: 20px 5px;
+  font-size: x-large;
+}
+button.btn-publicar {
+  width: 200px;
+  font-size: xx-large;
+  margin: 20px 5px 30px;
+}
+.formulario {
+  max-width: 700px;
+  margin: 20px auto 30px;
+  padding: 10px;
+  border-radius: 10px;
+  background: white;
+}
+.btn-publicar.desabilitado {
+  display: flex;
+  width: 160px;
+  background: #7aaf7a;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 25px 0px;
+  color: white;
+  font-weight: bold;
+  cursor: no-drop;
+}
+.btn-publicar.desabilitado:hover {
+  background: #97cb97;
+}
+.btn-publicar {
+  display: flex;
+  width: 160px;
+  background: green;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 25px 0px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-publicar:hover {
+  background: rgb(6, 171, 6);
+}
+.mensaje {
+  padding: 5px 10px;
+  background: #fff2f2;
+  width: fit-content;
+  border-radius: 5px;
+  border: 1px solid red;
+  margin: 10px 0px;
+  color: red;
+}
+a.editar-grupo {
+  padding: 1px 7px;
+  background: #4caf50;
+  margin-left: 5px;
+  border-radius: 5px;
+  color: white;
+}
+a.editar-grupo:hover {
+  background: #59d05d;
+  color: white;
+}
+@media(max-width: 480px){
+  .contenedor-texto {
+    display: flex;
+    flex-direction: column;
+}
+ .categoria-red {
+    padding: 12px 0px 0px 0px;
+}
+}
