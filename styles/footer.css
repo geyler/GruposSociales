@@ -2,6 +2,7 @@ footer {
   padding: 20px;
   background: #242424;
   color: white;
+  width: 100%;
 }
 footer ul {
   margin: 0px;
@@ -11,19 +12,6 @@ footer ul {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
-footer ul li a {
-  padding: 10px 20px;
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  margin: 5px 5px;
-}
-footer ul li a:hover {
-  color: #ffbc19;
-  background: #3b3b3b;
 }
 .copyright {
   text-align: center;

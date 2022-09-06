@@ -7,6 +7,8 @@ import Link from "next/link";
 import axios from "axios";
 import Paginado from "componentes/paginado";
 import Buscador from "componentes/buscador";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUpload } from "@fortawesome/free-solid-svg-icons";
 
 export default function Homex(props) {
   const router = useRouter();
@@ -29,26 +31,49 @@ export default function Homex(props) {
         <Header perfil={props.session ? props.session.user : ""} />
         <main className="main">
           <ul className="listado-inicio">
+            <li className="li-buscador">
+              <Buscador s={props.context.s} admin={true} />
+            </li>
             <li className="titulo-home">
               <h1>Administra tus Grupos.</h1>
             </li>
-            <li className="li-buscador">
-              <Buscador s={props.context.s} admin={true}/>
+            <li>
+              {props.posts.docs == "" ? (
+                <div className="contenedror-sin-contenido-admin">
+                  <h3>
+                    Todavía no tienes ningún Grupo para administrar, puedes
+                    agregar tus Grupos desde el siguiente botón.
+                  </h3>
+                </div>
+              ) : (
+                ""
+              )}
             </li>
-            {props.posts.docs != '' ? props.posts.docs.map((post) => (
-              <li className="inicio-li" key={post._id}>
-                <Link href={`/${post._id}`}>
-                  <a>
-                    <div className="contenedor-texto">
-                      <div className="titulo-del-grupo">{post.titulo}</div>{" "}
-                      <div className="categoria-red">
-                        {post.categoria} - {post.red}
-                      </div>
-                    </div>
+            <li className="btn-add">
+              <div className="contenedor-btn-publicar">
+                <Link href="/add">
+                  <a className="btn-publicar activado">
+                    <FontAwesomeIcon icon={faUpload} /> Añadir Grupo
                   </a>
                 </Link>
-              </li>
-            )): 'No se encontro ningun Grupo que administres o coinsida con tu busqueda'}
+              </div>
+            </li>
+            {props.posts.docs != ""
+              ? props.posts.docs.map((post) => (
+                  <li className="inicio-li" key={post._id}>
+                    <Link href={`/${post._id}`}>
+                      <a>
+                        <div className="contenedor-texto">
+                          <div className="titulo-del-grupo">{post.titulo}</div>{" "}
+                          <div className="categoria-red">
+                            {post.categoria} - {post.red}
+                          </div>
+                        </div>
+                      </a>
+                    </Link>
+                  </li>
+                ))
+              : ""}
           </ul>
 
           <Paginado
@@ -63,15 +88,36 @@ export default function Homex(props) {
           />
 
           <div className="text-informacion-footer">
+            <h2>Administra tus Grupos Publicados</h2>
             <p>
-              Aquí encontrarás muchos enlaces de canales o grupos de diferentes
-              redes sociales activos para apuntarte. Este sitio también te ayuda
-              a añadir tus grupos de tu red social favorita gratuitamente.
-              Puedes unirte a un número ilimitado de grupos de la red social que
-              quieras a través de este sitio web. Y si no encuentras tu grupo
-              preferido... ¡Créalo!. De esa manera, muchas personas encontrarán
-              tu Grupo y se unirán.
+              ¡Esta es la sección de administración, si llegaste hasta aquí fue
+              porque te creaste una cuenta en esta web, Felicidades! Por confiar
+              en nuestro buscador de grupos. Desde esta sección puedes
+              administrar tus Grupos.
             </p>
+            <h2>¿Como Publicar mi Grupo?</h2>
+            <p>
+              Para publicar un grupo, primero tienes que ir al formulario de
+              publicación mediante el botón (Publicar) que verás en la parte
+              superior de esta página, luego rellenas los datos del formulario y
+              listo, ya tu grupo estará público al instante.
+            </p>
+            <h2>¿Como Editar mi Grupo?</h2>
+            <p>
+              Para editar un Grupo tienes que entrar en el grupo, y en la parte
+              de abajo de la información de grupo te saldrá un botón que dirá
+              (Editar), das clic en él y te llevara al formulario de editar,
+              haces tus ajustes, das en el botón de guardar y tu grupo se
+              editara y publicara al instante.
+            </p>
+            <h2>¿Como Eliminar mi Grupo?</h2>
+            <p>
+              Para eliminar algún Grupo, al igual que para editar, primero
+              tienes que entrar al Grupo que deseas y dar clic en el botón
+              (Eliminar), y no hay vuelta atrás, tu grupo se eliminara al
+              instante.
+            </p>
+            <br/><br/><br/><br/>
           </div>
         </main>
         <Footer />

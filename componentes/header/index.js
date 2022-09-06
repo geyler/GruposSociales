@@ -102,7 +102,7 @@ const Header = function (props) {
         </div>
 
         <div className="logotipo">
-          <Link href='/'><a><img src="/logoweb.png"/></a></Link>
+          <Link href='/'><a>GRUPOS</a></Link>
         </div>
         <nav>
           <ul>
@@ -131,9 +131,9 @@ const Header = function (props) {
                 <Image src={user?.image} alt={user?.name} width={40} height={40}/>
                 <span>{user?.name}</span>
               </li>
-              <li><Link href="/add"><a><FontAwesomeIcon icon={faUpload}  onClick={cerrarMenus}/>  Añadir Grupo</a></Link></li>
-              <li><Link href="/admin"><a><FontAwesomeIcon icon={faUser}  onClick={cerrarMenus}/>  Administración</a></Link></li>
-              <li><a onClick={() => signOut()}><FontAwesomeIcon icon={faRightFromBracket}  onClick={cerrarMenus}/>  Cerrar Sesión</a></li>
+              <li><Link href="/add"><a><FontAwesomeIcon icon={faUpload}  onClick={cerrarMenus}/>   Añadir Grupo</a></Link></li>
+              <li><Link href="/admin"><a><FontAwesomeIcon icon={faUser}  onClick={cerrarMenus}/>   Administración</a></Link></li>
+              <li><a onClick={() => signOut()}><FontAwesomeIcon icon={faRightFromBracket}  onClick={cerrarMenus}/>   Cerrar Sesión</a></li>
             </ul> 
           </div>) : ''}
         </nav>

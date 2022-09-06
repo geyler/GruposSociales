@@ -51,40 +51,6 @@ button.btn-publicar {
   border-radius: 10px;
   background: white;
 }
-.btn-publicar.desabilitado {
-  display: flex;
-  width: 160px;
-  background: #7aaf7a;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  border-radius: 10px;
-  margin: 25px 0px;
-  color: white;
-  font-weight: bold;
-  cursor: no-drop;
-}
-.btn-publicar.desabilitado:hover {
-  background: #97cb97;
-}
-.btn-publicar {
-  display: flex;
-  width: 160px;
-  background: green;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  border-radius: 10px;
-  margin: 25px 0px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-.btn-publicar:hover {
-  background: rgb(6, 171, 6);
-}
 .mensaje {
   padding: 5px 10px;
   background: #fff2f2;
@@ -94,17 +60,6 @@ button.btn-publicar {
   margin: 10px 0px;
   color: red;
 }
-a.editar-grupo {
-  padding: 1px 7px;
-  background: #4caf50;
-  margin-left: 5px;
-  border-radius: 5px;
-  color: white;
-}
-a.editar-grupo:hover {
-  background: #59d05d;
-  color: white;
-}
 @media(max-width: 480px){
   .contenedor-texto {
     display: flex;
@@ -113,4 +68,42 @@ a.editar-grupo:hover {
  .categoria-red {
     padding: 12px 0px 0px 0px;
 }
+}
+li.btn-add .contenedor-btn-publicar {
+  padding: 0px 10px 20px;
+}
+.contenedror-sin-contenido-admin {
+  padding: 0px 10px 10px 10px;
+}
+.logotipo a {
+  display: flex;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: 0.35s;
+}
+.logotipo a:hover {
+  color: #ffbc19;
+}
+button.btn-login-google {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin: 30px auto;
+}
+.espacio-ante-google {
+  width: 5px;
+}
+h2.h2-login {
+  font-size: 20px;
+  color: #595959;
+  text-align: center;
+}
+p.p-login {
+  text-align: center;
 }

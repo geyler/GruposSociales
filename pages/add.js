@@ -160,11 +160,14 @@ export default function Add(props) {
             <Link href='/p/terminos-y-condiciones'><a className="condiciones-link">condiciones de uso</a></Link> y la 
             <Link href='/p/politica-de-privacidad'><a className="condiciones-link">privacidad.</a></Link></label>
           </div>
+          <div className="contenedor-btn-publicar">
           {
             condiciones ? (<div className="btn-publicar activado" onClick={validarFormulario} >Publicar</div>):(
               <div className="btn-publicar desabilitado">Publicar</div>
             )
           }
+          <Link href='/admin'><a className="btns-admin-eliminar">Cancelar</a></Link>
+          </div>
         </div>
       </main>
 

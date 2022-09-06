@@ -1,5 +1,9 @@
 import Link from "next/link";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faMagnifyingGlass
+} from "@fortawesome/free-solid-svg-icons";
 
 const Buscador = function (props) {
   const [buscar, setBuscar] = useState('');
@@ -19,13 +23,13 @@ const Buscador = function (props) {
       {buscar != "" ? (
         <div className="btn-buscador-div">
           <Link href={`/${props.admin?'admin':''}?s=${buscar}`}>
-          <a className="btn-buscador">Buscar</a>
+          <a className="btn-buscador"><FontAwesomeIcon icon={faMagnifyingGlass}/></a>
         </Link>
         </div>
       ) : (
         <div className="btn-buscador-div">
           <Link href="#">
-          <a className="btn-buscador desactivado">Buscar</a>
+          <a className="btn-buscador desactivado"><FontAwesomeIcon icon={faMagnifyingGlass}/></a>
         </Link>
         </div>
       )}

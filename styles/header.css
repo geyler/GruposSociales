@@ -23,11 +23,13 @@ nav ul {
 nav ul li a {
   background: transparent;
   color: white;
-  padding: 10px 20px;
+  padding: 7px 20px;
   margin: 0px 5px;
   font-size: 16px;
   cursor: pointer;
   display: block;
+  border-radius: 5px;
+  transition: 0.5s;
 }
 nav ul li a:hover {
   color: #ffbc19;
@@ -111,6 +113,7 @@ li.foto-perfil-menu span {
   font-size: 16px;
   cursor: pointer;
   display: block;
+  transition: 0.5s;
 }
 .contenedor-menu-perfil ul li a:hover {
   color: #ffbc19;
@@ -145,6 +148,7 @@ li.foto-perfil-menu span {
   padding: 0px;
   color: white;
   width: 27px;
+  transition: 0.5s;
 }
 .btn-menu-movil:hover {
   color: #ffbc19;
@@ -164,6 +168,7 @@ li.foto-perfil-menu span {
   font-size: 16px;
   cursor: pointer;
   display: block;
+  transition: 0.5s;
 }
 .menu-movil ul li a:hover {
   color: #ffbc19;
@@ -184,8 +189,8 @@ li.foto-perfil-menu span {
   color: #3b3b3b;
 }
 nav li.iniciar-session-movil a {
-  margin: 0px 0px 0px 5px;
-  padding: 10px 5px;
+  margin: 0px 0px 0px 10px;
+  padding: 7px 10px 7px 10px;
 }
 
 
@@ -250,6 +255,10 @@ li.foto-perfil.equis.true {
   font-size: 30px;
   width: 40px;
   color: white;
+  transition: 0.5s;
+}
+li.foto-perfil.equis.true:hover{
+  color: #ffbc19;
 }
 .bajo-header {
   width: 100vw;

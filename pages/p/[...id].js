@@ -532,7 +532,7 @@ export default function Homex(props) {
                 </div>
               </div>
             ) : (
-              "no encontrada"
+              ""
             )}
 
             {laUrl === "terminos-y-condiciones" ? (
@@ -901,7 +901,7 @@ export default function Homex(props) {
                 </div>
               </div>
             ) : (
-              "no encontrada"
+              ""
             )}
           </div>
         </main>
