@@ -151,3 +151,24 @@ p.p-login {
 .btns-admin.eliminar .eliminar {
   margin: 7px;
 }
+header > div > nav > ul > li:nth-child(9) {
+  display: none;
+}
+@media(max-width:1250px){
+  header > div > nav > ul > li:nth-child(9) {
+    display: block;
+}
+header > div > nav > ul > li:nth-child(8), header > div > nav > ul > li:nth-child(7) {
+  display: none;
+}
+}
+@media(max-width:1023px){
+header > div > nav > ul > li:nth-child(6) {
+  display: none;
+}
+}
+@media(max-width:830px){
+  header > div > nav > ul > li:nth-child(5){
+    display:none;
+  }
+}

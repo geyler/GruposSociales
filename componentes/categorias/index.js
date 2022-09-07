@@ -2,7 +2,7 @@ import Link from "next/link";
 const Categorias = function (props) {
   return (
     <>
-      <h3>Buscar un grupo por Red Social</h3>
+      <h3 id="todas-las-categorias">Buscar un grupo por Red Social</h3>
       <ul className="categorias-links">
         <li>
           <Link href="/?r=Telegram">

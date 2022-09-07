@@ -110,6 +110,11 @@ const Header = function (props) {
             <li className="nav-li-menu-pc" onClick={cerrarMenus}><Link href="/?r=telegram"><a>Telegram</a></Link></li>
             <li className="nav-li-menu-pc" onClick={cerrarMenus}><Link href="/?r=whatsapp"><a>Whatsapp</a></Link></li>
             <li className="nav-li-menu-pc" onClick={cerrarMenus}><Link href="/?r=facebook"><a>Facebook</a></Link></li>
+            <li className="nav-li-menu-pc" onClick={cerrarMenus}><Link href="/?r=reddit"><a>Reddit</a></Link></li>
+            <li className="nav-li-menu-pc" onClick={cerrarMenus}><Link href="/?r=discord"><a>Discord</a></Link></li>
+            <li className="nav-li-menu-pc" onClick={cerrarMenus}><Link href="/?r=signal"><a>Signal</a></Link></li>
+            <li className="nav-li-menu-pc" onClick={cerrarMenus}><Link href="/?r=viber"><a>Viber</a></Link></li>
+            <li className="nav-li-menu-pc" onClick={cerrarMenus}><Link href="/#todas-las-categorias"><a>Mas</a></Link></li>
             {props.perfil ? (<><li className={`foto-perfil barras ${menuPerfil}`} onClick={() => {
               menuPerfil ? setMenuPerfil(false) : setMenuPerfil(true)
             }}>

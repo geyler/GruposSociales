@@ -133,16 +133,17 @@ export default function Add(props) {
             <label><input type="radio" onChange={handleChange} name="categoria" value="Arte"/> Arte</label>
             <label><input type="radio" onChange={handleChange} name="categoria" value="Apuestas"/> Apuestas</label>
             <label><input type="radio" onChange={handleChange} name="categoria" value="Ayuda"/> Ayuda</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" value="Cuencia"/> Cuencia</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Ciencia"/> Ciencia</label>
             <label><input type="radio" onChange={handleChange} name="categoria" value="Debates"/> Debates</label>
             <label><input type="radio" onChange={handleChange} name="categoria" value="Deportes"/> Deportes</label>
             <label><input type="radio" onChange={handleChange} name="categoria" value="Fans"/> Fans</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" value="Frikis"/> Frikis</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Otaku"/> Otaku</label>
             <label><input type="radio" onChange={handleChange} name="categoria" value="Futbol"/> Futbol</label>
             <label><input type="radio" onChange={handleChange} name="categoria" value="Gamers"/> Gamers</label>
             <label><input type="radio" onChange={handleChange} name="categoria" value="Lectores"/> Lectores</label>
             <label><input type="radio" onChange={handleChange} name="categoria" value="Marketing"/> Marketing</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" value="Musica"/> Musica</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Noticias"/> Noticias</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Peliculas"/> Peliculas</label>
             <label><input type="radio" onChange={handleChange} name="categoria" value="Politica"/> Politica</label>
             <label><input type="radio" onChange={handleChange} name="categoria" value="Risas"/> Risas</label>
             <label><input type="radio" onChange={handleChange} name="categoria" value="Trading"/> Trading</label>

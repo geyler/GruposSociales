@@ -243,6 +243,9 @@ export const getServerSideProps = async (context) => {
     if (session?.user?.email === "geylerps@gmail.com") {
       var esCreador = true;
     }
+    if (session?.user?.email === "smelterxd@gmail.com") {
+      var esCreador = true;
+    }
 
     return {
       props: {

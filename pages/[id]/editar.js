@@ -128,27 +128,28 @@ export default function Add(props) {
           <input type='text' value={link} placeholder="Link del Grupo..." onChange={(e) => {setLink(e.target.value)}}/>
           <h4>Selecciona una Categoria.</h4>
           <div className="seleccionar-check">
-            <label><input type="radio" onChange={handleChange} name="categoria" checked={categoria === 'Amistad'} value="Amistad" /> Amistad</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" checked={categoria === 'Arte'} value="Arte"/> Arte</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" checked={categoria === 'Apuestas'} value="Apuestas"/> Apuestas</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" checked={categoria === 'Ayuda'} value="Ayuda"/> Ayuda</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" checked={categoria === 'Ciencia'} value="Ciencia"/> Cuencia</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" checked={categoria === 'Debates'} value="Debates"/> Debates</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" checked={categoria === 'Deportes'} value="Deportes"/> Deportes</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" checked={categoria === 'Fans'} value="Fans"/> Fans</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" checked={categoria === 'Frikis'} value="Frikis"/> Frikis</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" checked={categoria === 'Futbol'} value="Futbol"/> Futbol</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" checked={categoria === 'Gamers'} value="Gamers"/> Gamers</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" checked={categoria === 'Lectores'} value="Lectores"/> Lectores</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" checked={categoria === 'Marketing'} value="Marketing"/> Marketing</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" checked={categoria === 'Musica'} value="Musica"/> Musica</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" checked={categoria === 'Politica'} value="Politica"/> Politica</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" checked={categoria === 'Risas'} value="Risas"/> Risas</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" checked={categoria === 'Trading'} value="Trading"/> Trading</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" checked={categoria === 'Musica'} value="Musica"/> Musica</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" checked={categoria === 'Series'} value="Series"/> Series</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" checked={categoria === 'Viajar'} value="Viajar"/> Viajar</label>
-            <label><input type="radio" onChange={handleChange} name="categoria" checked={categoria === 'Adultos'} value="Adultos"/> Adultos</label>
+          <label><input type="radio" onChange={handleChange} name="categoria" value="Amistad"/> Amistad</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Arte"/> Arte</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Apuestas"/> Apuestas</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Ayuda"/> Ayuda</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Ciencia"/> Ciencia</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Debates"/> Debates</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Deportes"/> Deportes</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Fans"/> Fans</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Otaku"/> Otaku</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Futbol"/> Futbol</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Gamers"/> Gamers</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Lectores"/> Lectores</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Marketing"/> Marketing</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Noticias"/> Noticias</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Peliculas"/> Peliculas</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Politica"/> Politica</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Risas"/> Risas</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Trading"/> Trading</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Musica"/> Musica</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Series"/> Series</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Viajar"/> Viajar</label>
+            <label><input type="radio" onChange={handleChange} name="categoria" value="Adultos"/> Adultos</label>
           </div>
           {
             mensaje ? (<div className="mensaje">{mensaje}</div>) : ''
@@ -195,6 +196,10 @@ export default function Add(props) {
       if(session.user.email === 'geylerps@gmail.com'){
         var esCreador = true;
       }
+      if(session.user.email === 'smelterxd@gmail.com'){
+        var esCreador = true;
+      }
+      
       return {
         props: {
           posts: data,
