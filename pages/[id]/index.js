@@ -3,11 +3,15 @@ import Footer from "../../componentes/footer";
 import Header from "../../componentes/header";
 import { getSession } from "next-auth/react";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useEffect, useState} from "react";
 import Link from "next/link";
 import axios from "axios";
 import Buscador from "componentes/buscador";
 import Categorias from "componentes/categorias";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faXmark
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Homex(props) {
   const router = useRouter();
@@ -15,9 +19,13 @@ export default function Homex(props) {
   const cat = post?.red;
 
   const [condiciones, setCondiciones] = useState(false);
+  const [eliminarGrupo, seteliminarGrupo] = useState(false);
+
   useEffect(() => {
     setCondiciones(false);
+    seteliminarGrupo(false);
   }, []);
+
   const aceptadas = () => {
     if (condiciones) {
       setCondiciones(false);
@@ -25,6 +33,7 @@ export default function Homex(props) {
       setCondiciones(true);
     }
   };
+
   const eliminar = async () => {
     try {
       const res = await axios.put(`/api/grupos/eliminar`, {
@@ -136,15 +145,35 @@ export default function Homex(props) {
                 <br />- Al unirte al grupo saldrás de esta web.
               </small>
             </div>
-            {props.esCreador ? (
+            {props.esCreador ? (<>
               <div className="btns-admin">
                 <Link href={`/${post?._id}/editar`}>
                   <a className="btns-admin-editar">Editar el Grupo</a>
                 </Link>
-                <div className="btns-admin-eliminar" onClick={eliminar}>
+                <div className="btns-admin-eliminar"  onClick={() => seteliminarGrupo(true)}>
                   Eliminar
                 </div>
               </div>
+              <div className={`modal ${eliminarGrupo?'':'none'}`}>
+                <div className='dentro-modal'>
+                  <div className="x-cerrar">
+                    <div className="x-cerrar-dentro" onClick={() => seteliminarGrupo(false)}><FontAwesomeIcon icon={faXmark} /></div>
+                  </div>
+                  <div className="centrar-contenido-modal">
+                    <h2>¿Está seguro que quiere Eliminar este Grupo?</h2>
+                    <div className="btns-admin eliminar">
+                    <div className="btns-admin-eliminar eliminar" onClick={eliminar}>Eliminar</div>
+                    <Link href={`/${post?._id}/editar`}>
+                    <a className="btns-admin-editar eliminar">Editar</a>
+                    </Link>
+                    <Link href='#'>
+                    <a className="btns-admin-editar eliminar" onClick={() => seteliminarGrupo(false)}>Cancelar</a>
+                    </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </>
             ) : (
               ""
             )}

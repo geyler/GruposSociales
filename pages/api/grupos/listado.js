@@ -25,7 +25,7 @@ const handler = async (req, res) => {
         $options: "i",
       },
     }, {
-      limit: 5,
+      limit: 10,
       page: pag,
       sort: {
           createdAt: -1
