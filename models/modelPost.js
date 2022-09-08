@@ -27,6 +27,10 @@ const modelPost = new Schema({
     type: String,
     required: true,
   },
+  autor: {
+    type: String,
+    required: true,
+  },
 }, {
   timestamps: true
 });

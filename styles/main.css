@@ -172,3 +172,20 @@ header > div > nav > ul > li:nth-child(6) {
     display:none;
   }
 }
+.titulo-del-grupo {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: roboto !important;
+}
+main.error-404 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 700px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 30px 10px 40px;
+}
+h1.e404-titulo {
+  font-size: 80px;
+}
