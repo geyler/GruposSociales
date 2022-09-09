@@ -39,7 +39,7 @@ export default function Sitemap(props) {
       <meta name="msapplication-TileColor" content="#242424"/>
       <meta name="msapplication-TileImage" content={`/favicon.png`}/>
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2965450045901943"
-     crossorigin="anonymous"></script>
+     crossOrigin="anonymous"></script>
       </Head>
       <ArticleJsonLd
       url={`/404`}
