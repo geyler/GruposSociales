@@ -31,6 +31,11 @@ const Footer = function () {
             <a>Terminos y Condiciones</a>
           </Link>
         </li>
+        <li>
+          <Link href="/sitemap">
+            <a>Sitemap</a>
+          </Link>
+        </li>
       </ul>
       <div className="copyright">
         © 2022{" "}

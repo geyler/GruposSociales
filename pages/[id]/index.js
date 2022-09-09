@@ -254,9 +254,6 @@ export default function Homex(props) {
                         >
                           Eliminar
                         </div>
-                        <Link href={`/${post?._id}/editar`}>
-                          <a className="btns-admin-editar eliminar">Editar</a>
-                        </Link>
                         <Link href="#">
                           <a
                             className="btns-admin-editar eliminar"
@@ -274,7 +271,13 @@ export default function Homex(props) {
               ""
             )}
           </div>
+          
           <div className="text-informacion-footer">
+          <br />
+          <br />
+          <Categorias />
+          <br />
+          <br />
             <h2>
               Este es un Grupo de {cat} y toca el tema {post?.categoria}.
             </h2>
@@ -313,9 +316,7 @@ export default function Homex(props) {
               través de buscadores de grupos de {cat} como Grupostelegram.net y
               puedes unirte a través de los enlaces de invitación.
             </p>
-            <br />
-            <br />
-            <Categorias />
+            
             <br />
             <br />
             <br />

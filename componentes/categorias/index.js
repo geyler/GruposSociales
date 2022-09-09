@@ -85,8 +85,8 @@ const Categorias = function (props) {
           </Link>
         </li>
         <li>
-          <Link href="/?q=Frikis">
-            <a>Frikis</a>
+          <Link href="/?q=Otaku">
+            <a>Otaku</a>
           </Link>
         </li>
         <li>
@@ -110,8 +110,13 @@ const Categorias = function (props) {
           </Link>
         </li>
         <li>
-          <Link href="/?q=Musica">
-            <a>Musica</a>
+          <Link href="/?q=Noticias">
+            <a>Noticias</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/?q=Peliculas">
+            <a>Peliculas</a>
           </Link>
         </li>
         <li>
