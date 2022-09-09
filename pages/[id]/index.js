@@ -68,10 +68,10 @@ export default function Homex(props) {
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="robots" content="max-image-preview:large" />
-      <meta property="image" content={`${process.env.PAGE_URL}/${cat.toLowerCase()}.jpg`} />
-      <meta property="og:image" content={`${process.env.PAGE_URL}/${cat.toLowerCase()}.jpg`} />
-      <meta name="twitter:image" content={`${process.env.PAGE_URL}/${cat.toLowerCase()}.jpg`} />
-      <link href={`${process.env.PAGE_URL}/${cat.toLowerCase()}.jpg`} rel="image_src"/>
+      <meta property="image" content={`/${cat.toLowerCase()}.jpg`} />
+      <meta property="og:image" content={`/${cat.toLowerCase()}.jpg`} />
+      <meta name="twitter:image" content={`/${cat.toLowerCase()}.jpg`} />
+      <link href={`/${cat.toLowerCase()}.jpg`} rel="image_src"/>
       <meta property="image:width" content="1280" />
       <meta property="image:height" content="720" />
       <meta property="og:image:width" content="1280" />
@@ -80,27 +80,27 @@ export default function Homex(props) {
       <meta property="og:locale" content="es_ES" />
       <meta property="og:type" content="WebPage" />
       <meta property="og:site_name" content="Grupos Para Unirse" />
-      <meta property="url" content={`${process.env.PAGE_URL}${props.url}`} />
-      <meta property="og:url" content={`${process.env.PAGE_URL}${props.url}`} />
-      <link rel="canonical" href={`${process.env.PAGE_URL}${props.url}`} />
+      <meta property="url" content={`/${props.url}`} />
+      <meta property="og:url" content={`/${props.url}`} />
+      <link rel="canonical" href={`/${props.url}`} />
       <meta name="msapplication-TileColor" content="#242424"/>
-      <meta name="msapplication-TileImage" content={`${process.env.PAGE_URL}/favicon.png`}/>
+      <meta name="msapplication-TileImage" content={`/favicon.png`}/>
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2965450045901943"
      crossorigin="anonymous"></script>
       </Head>
       <ArticleJsonLd
-          url= {`${process.env.PAGE_URL}/${post?._id}`}
+          url= {`/${post?._id}`}
           title= {`${post?.titulo} | Grupos Para Unirse.`}
           images={[
-            `${process.env.PAGE_URL}/${cat.toLowerCase()}.jpg`,
-            `${process.env.PAGE_URL}/favicon.ico`,
+            `/${cat.toLowerCase()}.jpg`,
+            `/favicon.ico`,
           ]}
           datePublished={post?.createdAt}
           dateModified={post?.updatedAt}
           authorName={[
             {
               name: post.autor,
-              url: `${process.env.PAGE_URL}/${post?._id}`
+              url: `/${post?._id}`
             },
             {
               name: "Grupos Para Unirse",
@@ -108,7 +108,7 @@ export default function Homex(props) {
             }
           ]}
           publisherName="Grupos Para Unirse"
-          publisherLogo={`${process.env.PAGE_URL}/favicon.ico`}
+          publisherLogo={`/favicon.ico`}
           description={`Grupo Para Unirse de ${post?.red} | ${post?.titulo} | Grupo de ${post?.categoria} en ${post?.red}`}
         />
     <BreadcrumbJsonLd

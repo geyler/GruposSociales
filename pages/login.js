@@ -21,10 +21,10 @@ const Login = () => {
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="robots" content="max-image-preview:large" />
-      <meta property="image" content={`${process.env.PAGE_URL}/grupos.jpg`} />
-      <meta property="og:image" content={`${process.env.PAGE_URL}/grupos.jpg`} />
-      <meta name="twitter:image" content={`${process.env.PAGE_URL}/grupos.jpg`} />
-      <link href={`${process.env.PAGE_URL}/grupos.jpg`} rel="image_src"/>
+      <meta property="image" content={`/grupos.jpg`} />
+      <meta property="og:image" content={`/grupos.jpg`} />
+      <meta name="twitter:image" content={`/grupos.jpg`} />
+      <link href={`/grupos.jpg`} rel="image_src"/>
       <meta property="image:width" content="1280" />
       <meta property="image:height" content="720" />
       <meta property="og:image:width" content="1280" />
@@ -33,30 +33,32 @@ const Login = () => {
       <meta property="og:locale" content="es_ES" />
       <meta property="og:type" content="WebPage" />
       <meta property="og:site_name" content="Grupos Para Unirse" />
-      <meta property="url" content={`${process.env.PAGE_URL}/login`} />
-      <meta property="og:url" content={`${process.env.PAGE_URL}/login`} />
-      <link rel="canonical" href={`${process.env.PAGE_URL}/login`} />
+      <meta property="url" content={`/login`} />
+      <meta property="og:url" content={`/login`} />
+      <link rel="canonical" href={`/login`} />
       <meta name="msapplication-TileColor" content="#242424"/>
-      <meta name="msapplication-TileImage" content={`${process.env.PAGE_URL}/favicon.png`}/>
+      <meta name="msapplication-TileImage" content={`/favicon.png`}/>
+
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2965450045901943"
      crossorigin="anonymous"></script>
+     
       </Head>
 
       <ArticleJsonLd
-      url={`${process.env.PAGE_URL}/login`}
+      url={`/login`}
       title="Inicir Sesion en GruposParaUnirse.net"
       images={[
-        `${process.env.PAGE_URL}/grupos.jpg`,
-        `${process.env.PAGE_URL}/favicon.png`,
+        `/grupos.jpg`,
+        `/favicon.png`,
       ]}
       authorName={[
         {
           name: "Grupos Para Unirse",
-          url:`${process.env.PAGE_URL}/`
+          url:`/`
         }
       ]}
       publisherName="Grupos Para Unirse"
-      publisherLogo={`${process.env.PAGE_URL}/favicon.ico`}
+      publisherLogo={`/favicon.ico`}
       description="¿Buscas Grupos de Redes Sociales para Unirte? En nuestra web GruposParaUnirse encontrarás una gran variedad de Grupos disponibles."    
     />
     <BreadcrumbJsonLd
