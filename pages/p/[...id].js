@@ -45,6 +45,8 @@ export default function Homex(props) {
       <link rel="canonical" href={`${process.env.PAGE_URL}/admin`} />
       <meta name="msapplication-TileColor" content="#242424"/>
       <meta name="msapplication-TileImage" content={`${process.env.PAGE_URL}/favicon.png`}/>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2965450045901943"
+     crossorigin="anonymous"></script>
       </Head>
       <ArticleJsonLd
       url={`${process.env.PAGE_URL}/login`}
