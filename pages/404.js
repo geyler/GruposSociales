@@ -21,10 +21,10 @@ export default function Homex(props) {
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="robots" content="max-image-preview:large" />
-      <meta property="image" content={`/grupos.jpg`} />
-      <meta property="og:image" content={`/grupos.jpg`} />
-      <meta name="twitter:image" content={`/grupos.jpg`} />
-      <link href={`/grupos.jpg`} rel="image_src"/>
+      <meta property="image" content={`https://gruposparaunirse.net/grupos.jpg`} />
+      <meta property="og:image" content={`https://gruposparaunirse.net/grupos.jpg`} />
+      <meta name="twitter:image" content={`https://gruposparaunirse.net/grupos.jpg`} />
+      <link href={`https://gruposparaunirse.net/grupos.jpg`} rel="image_src"/>
       <meta property="image:width" content="1280" />
       <meta property="image:height" content="720" />
       <meta property="og:image:width" content="1280" />
@@ -33,29 +33,29 @@ export default function Homex(props) {
       <meta property="og:locale" content="es_ES" />
       <meta property="og:type" content="WebPage" />
       <meta property="og:site_name" content="Grupos Para Unirse" />
-      <meta property="url" content={`/404`} />
-      <meta property="og:url" content={`/404`} />
-      <link rel="canonical" href={`/404`} />
+      <meta property="url" content={`https://gruposparaunirse.net/404`} />
+      <meta property="og:url" content={`https://gruposparaunirse.net/404`} />
+      <link rel="canonical" href={`https://gruposparaunirse.net/404`} />
       <meta name="msapplication-TileColor" content="#242424"/>
-      <meta name="msapplication-TileImage" content={`/favicon.png`}/>
+      <meta name="msapplication-TileImage" content={`https://gruposparaunirse.net/favicon.png`}/>
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2965450045901943"
      crossOrigin="anonymous"></script>
       </Head>
       <ArticleJsonLd
-      url={`/404`}
+      url={`https://gruposparaunirse.net/404`}
       title="Error 404 - Lo que estas buscando no se encuentra."
       images={[
-        `/grupos.jpg`,
-        `/favicon.png`,
+        `https://gruposparaunirse.net/grupos.jpg`,
+        `https://gruposparaunirse.net/favicon.png`,
       ]}
       authorName={[
         {
           name: "Grupos Para Unirse",
-          url:`/`
+          url:`https://gruposparaunirse.net/`
         }
       ]}
       publisherName="Grupos Para Unirse"
-      publisherLogo={`/favicon.ico`}
+      publisherLogo={`https://gruposparaunirse.net/favicon.ico`}
       description="Error 404 - Lo que estas buscando no se encuentra."    
     />
     <BreadcrumbJsonLd
@@ -63,37 +63,37 @@ export default function Homex(props) {
         {
           position: 1,
           name: 'Telegram',
-          item: `${process.env.PAGE_URL}/?r=Telegram`,
+          item: `https://gruposparaunirse.net/?r=Telegram`,
         },
         {
           position: 2,
           name: 'Whatsapp',
-          item: `${process.env.PAGE_URL}/?r=Whatsapp`,
+          item: `https://gruposparaunirse.net/?r=Whatsapp`,
         },
         {
           position: 3,
           name: 'Facebook',
-          item: `${process.env.PAGE_URL}/?r=Facebook`,
+          item: `https://gruposparaunirse.net/?r=Facebook`,
         },
         {
           position: 4,
           name: 'Reddit',
-          item: `${process.env.PAGE_URL}/?r=Reddit`,
+          item: `https://gruposparaunirse.net/?r=Reddit`,
         },
         {
           position: 5,
           name: 'Discord',
-          item: `${process.env.PAGE_URL}/?r=Discord`,
+          item: `https://gruposparaunirse.net/?r=Discord`,
         },
         {
           position: 6,
           name: 'Signal',
-          item: `${process.env.PAGE_URL}/?r=Signal`,
+          item: `https://gruposparaunirse.net/?r=Signal`,
         },
         {
           position: 7,
           name: 'Viber',
-          item: `${process.env.PAGE_URL}/?r=Viber`,
+          item: `https://gruposparaunirse.net/?r=Viber`,
         },
       ]}
     />
