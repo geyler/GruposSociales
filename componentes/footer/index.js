@@ -9,6 +9,9 @@ const Footer = function () {
             +18 PROHIBIDO PARA MENORES DE EDAD.
           </li>
           <li className="texto-footer-li">
+          Este proyecto fue creado para unir a más personas en todo el mundo
+          </li>
+          <li className="texto-footer-li">
             Grupos Sociales es una guia de anuncios de grupos de diferentes redes sociales y
             no tiene ninguna relación con las empresas a las que pertenecen esas redes sociales.
           </li>
