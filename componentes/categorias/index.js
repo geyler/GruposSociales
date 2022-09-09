@@ -1,5 +1,7 @@
 import Link from "next/link";
 const Categorias = function (props) {
+  const red = props?.red;
+  console.log(props?.red)
   return (
     <>
       <h3 id="todas-las-categorias">Buscar un grupo por Red Social</h3>
@@ -45,112 +47,112 @@ const Categorias = function (props) {
       <h3>Buscar un grupo por Categoría</h3>
       <ul className="categorias-links">
         <li>
-          <Link href="/?q=Amistad">
+          <Link href={`${red ? "/?r="+red+"&q=Amistad" : "/?q=Amistad"}`}>
             <a>Amistad</a>
           </Link>
         </li>
         <li>
-          <Link href="/?q=Arte">
+          <Link href={`${red ? "/?r="+red+"&q=Arte" : "/?q=Arte"}`}>
             <a>Arte</a>
           </Link>
         </li>
         <li>
-          <Link href="/?q=Apuestas">
+          <Link href={`${red ? "/?r="+red+"&q=Apuestas" : "/?q=Apuestas"}`}>
             <a>Apuestas</a>
           </Link>
         </li>
         <li>
-          <Link href="/?q=Ayuda">
+          <Link href={`${red ? "/?r="+red+"&q=Ayuda" : "/?q=Ayuda"}`}>
             <a>Ayuda</a>
           </Link>
         </li>
         <li>
-          <Link href="/?q=Ciencia">
+          <Link href={`${red ? "/?r="+red+"&q=Ciencia" : "/?q=Ciencia"}`}>
             <a>Ciencia</a>
           </Link>
         </li>
         <li>
-          <Link href="/?q=Debates">
+          <Link href={`${red ? "/?r="+red+"&q=Debates" : "/?q=Debates"}`}>
             <a>Debates</a>
           </Link>
         </li>
         <li>
-          <Link href="/?q=Deportes">
+          <Link href={`${red ? "/?r="+red+"&q=Deportes" : "/?q=Deportes"}`}>
             <a>Deportes</a>
           </Link>
         </li>
         <li>
-          <Link href="/?q=Fans">
+          <Link href={`${red ? "/?r="+red+"&q=Fans" : "/?q=Fans"}`}>
             <a>Fans</a>
           </Link>
         </li>
         <li>
-          <Link href="/?q=Otaku">
+          <Link href={`${red ? "/?r="+red+"&q=Otaku" : "/?q=Otaku"}`}>
             <a>Otaku</a>
           </Link>
         </li>
         <li>
-          <Link href="/?q=Futbol">
+          <Link href={`${red ? "/?r="+red+"&q=Futbol" : "/?q=Futbol"}`}>
             <a>Futbol</a>
           </Link>
         </li>
         <li>
-          <Link href="/?q=Gamers">
+          <Link href={`${red ? "/?r="+red+"&q=Gamers" : "/?q=Gamers"}`}>
             <a>Gamers</a>
           </Link>
         </li>
         <li>
-          <Link href="/?q=Lectores">
+          <Link href={`${red ? "/?r="+red+"&q=Lectores" : "/?q=Lectores"}`}>
             <a>Lectores</a>
           </Link>
         </li>
         <li>
-          <Link href="/?q=Marketing">
+          <Link href={`${red ? "/?r="+red+"&q=Marketing" : "/?q=Marketing"}`}>
             <a>Marketing</a>
           </Link>
         </li>
         <li>
-          <Link href="/?q=Noticias">
+          <Link href={`${red ? "/?r="+red+"&q=Noticias" : "/?q=Noticias"}`}>
             <a>Noticias</a>
           </Link>
         </li>
         <li>
-          <Link href="/?q=Peliculas">
+          <Link href={`${red ? "/?r="+red+"&q=Peliculas" : "/?q=Peliculas"}`}>
             <a>Peliculas</a>
           </Link>
         </li>
         <li>
-          <Link href="/?q=Politica">
+          <Link href={`${red ? "/?r="+red+"&q=Politica" : "/?q=Politica"}`}>
             <a>Politica</a>
           </Link>
         </li>
         <li>
-          <Link href="/?q=Risas">
+          <Link href={`${red ? "/?r="+red+"&q=Risas" : "/?q=Risas"}`}>
             <a>Risas</a>
           </Link>
         </li>
         <li>
-          <Link href="/?q=Trading">
+          <Link href={`${red ? "/?r="+red+"&q=Trading" : "/?q=Trading"}`}>
             <a>Trading</a>
           </Link>
         </li>
         <li>
-          <Link href="/?q=Musica">
+          <Link href={`${red ? "/?r="+red+"&q=Musica" : "/?q=Musica"}`}>
             <a>Musica</a>
           </Link>
         </li>
         <li>
-          <Link href="/?q=Series">
+          <Link href={`${red ? "/?r="+red+"&q=Series" : "/?q=Series"}`}>
             <a>Series</a>
           </Link>
         </li>
         <li>
-          <Link href="/?q=Viajar">
+          <Link href={`${red ? "/?r="+red+"&q=Viajar" : "/?q=Viajar"}`}>
             <a>Viajar</a>
           </Link>
         </li>
         <li>
-          <Link href="/?q=Adultos">
+          <Link href={`${red ? "/?r="+red+"&q=Adultos" : "/?q=Adultos"}`}>
             <a>Adultos</a>
           </Link>
         </li>

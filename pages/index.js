@@ -19,9 +19,11 @@ export default function Homex(props) {
   // ver si es categoria, red social o busqueda
   if (props.context.r) {
     var cat = props.context.r;
+    var rSocial = props.context.r
   }
   if (props.context.q) {
     var cat = props.context.q;
+    var categ = props.context.q;
   }
   if (props.context.s) {
     var cat = props.context.s;
@@ -143,25 +145,10 @@ console.log()
               </div>
             </li>
             <li className="titulo-home">
-              {props.context.r ? (
-                <h1>Grupos para unirte de {props.context.r}</h1>
+              {cat ? (
+                <h1>Grupos para unirte de {rSocial?rSocial:''}{rSocial && categ ?' / ':''}{categ?categ:''}</h1>
               ) : (
-                ""
-              )}
-              {props.context.q ? (
-                <h1>Grupos para unirte de {props.context.q}</h1>
-              ) : (
-                ""
-              )}
-              {props.context.s ? (
-                <h1>Grupos para unirte de {props.context.s}</h1>
-              ) : (
-                ""
-              )}
-              {!props.context.q && !props.context.r && !props.context.s ? (
                 <h1>Grupos para unirte de Redes Sociales.</h1>
-              ) : (
-                ""
               )}
             </li>
 
@@ -205,7 +192,7 @@ console.log()
           <div className="text-informacion-footer">
           <br />
           <br />
-          <Categorias />
+          <Categorias red={rSocial} />
           <br />
           <br />
             {cat ? (
