@@ -24,3 +24,6 @@ ul.texto-footer-ul {
   flex-direction: column;
   padding: 0px 0px 20px 0px;
 }
+ul.links-en-el-footer li a {
+  margin: 10px;
+}

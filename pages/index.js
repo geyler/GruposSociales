@@ -9,13 +9,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpload } from "@fortawesome/free-solid-svg-icons";
 import Buscador from "componentes/buscador";
 import Categorias from "componentes/categorias";
-import { ArticleJsonLd } from "next-seo";
+import { ArticleJsonLd, BreadcrumbJsonLd } from "next-seo";
 import { useRouter } from 'next/router';
 
 export default function Homex(props) {
 
   const router = useRouter();
 
+  // ver si es categoria, red social o busqueda
   if (props.context.r) {
     var cat = props.context.r;
   }
@@ -26,63 +27,107 @@ export default function Homex(props) {
     var cat = props.context.s;
   }
 
+  //ver que red social es, sino poner grupos
+  if (props.context.r) {
+    var rsocial = props.context.r.toLowerCase();
+  }else{
+    var rsocial = 'grupos'
+  }
+
 console.log()
   return (
     <div className="contenedor">
       <Head>
+      <meta name="viewport" content="width=device-width"/>
+      <link rel="icon" href="/favicon.ico" />
       <title>Grupos para Unirse de { cat? cat : 'Whatsapp'} | Grupos de { cat? cat : 'Whatsapp'}</title>
       <meta property="og:title" content={`Grupos para Unirse de ${ cat? cat : 'Whatsapp'} | Grupos de ${ cat? cat : 'Whatsapp'}`} />
       <meta name="twitter:title" content={`Grupos para Unirse de ${ cat? cat : 'Whatsapp'} | Grupos de ${ cat? cat : 'Whatsapp'}`} />
-
       <meta name="description" content={`¿Buscas Grupos de ${ cat? cat : 'Whatsapp'} para Unirte? En nuestra web GruposParaUnirse encontrarás una gran variedad de Grupos de ${ cat? cat : 'Whatsapp'} disponibles.`} />
       <meta property="og:description" content={`¿Buscas Grupos de ${ cat? cat : 'Whatsapp'} para Unirte? En nuestra web GruposParaUnirse encontrarás una gran variedad de Grupos de ${ cat? cat : 'Whatsapp'} disponibles.`} />
       <meta name="twitter:description" content={`¿Buscas Grupos de ${ cat? cat : 'Whatsapp'} para Unirte? En nuestra web GruposParaUnirse encontrarás una gran variedad de Grupos de ${ cat? cat : 'Whatsapp'} disponibles.`}/>
-
       <meta name="keywords" content={` ${cat?cat:'Whatsapp'},Grupos de ${cat?cat:'Whatsapp'},Unirme a Grupos de  ${cat?cat:'Whatsapp'}, Link de Grupos de  ${cat?cat:'Whatsapp'}`} />
-
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="robots" content="max-image-preview:large" />
-      <meta property="image" content={`${process.env.PAGE_URL}/grupos.jpg`} />
-      <meta property="og:image" content={`${process.env.PAGE_URL}/grupos.jpg`} />
-      <meta name="twitter:image" content={`${process.env.PAGE_URL}/grupos.jpg`} />
-      <link href={`${process.env.PAGE_URL}/grupos.jpg`} rel="image_src"/>
+      <meta property="image" content={`${process.env.PAGE_URL}/${rsocial}.jpg`} />
+      <meta property="og:image" content={`${process.env.PAGE_URL}/${rsocial}.jpg`} />
+      <meta name="twitter:image" content={`${process.env.PAGE_URL}/${rsocial}.jpg`} />
+      <link href={`${process.env.PAGE_URL}/${rsocial}.jpg`} rel="image_src"/>
       <meta property="image:width" content="1280" />
       <meta property="image:height" content="720" />
       <meta property="og:image:width" content="1280" />
       <meta property="og:image:height" content="720" />
-
       <meta name="robots" content="index,follow"/>
       <meta property="og:locale" content="es_ES" />
-
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content="WebPage" />
       <meta property="og:site_name" content="Grupos Para Unirse" />
-      <meta property="url" content="" />
-      <meta property="og:url" content="" />
-      <link rel="canonical" href="" />
+      <meta property="url" content={`${process.env.PAGE_URL}${props.url}`} />
+      <meta property="og:url" content={`${process.env.PAGE_URL}${props.url}`} />
+      <link rel="canonical" href={`${process.env.PAGE_URL}${props.url}`} />
+      <meta name="msapplication-TileColor" content="#242424"/>
+      <meta name="msapplication-TileImage" content={`${process.env.PAGE_URL}/favicon.png`}/>
       </Head>
+      <ArticleJsonLd
+      url={`${process.env.PAGE_URL}${props.url}`}
+      title={`Grupos para Unirse de ${ cat? cat : 'Whatsapp'} | Grupos de ${ cat? cat : 'Whatsapp'}`}
+      images={[
+        `${process.env.PAGE_URL}/${rsocial}.jpg`,
+        `${process.env.PAGE_URL}/favicon.png`,
+      ]}
+      authorName={[
+        {
+          name: "Grupos Para Unirse",
+          url:`${process.env.PAGE_URL}/`
+        }
+      ]}
+      publisherName="Grupos Para Unirse"
+      publisherLogo={`${process.env.PAGE_URL}/favicon.ico`}
+      description={`¿Buscas Grupos de ${ cat? cat : 'Whatsapp'} para Unirte? En nuestra web GruposParaUnirse encontrarás una gran variedad de Grupos de ${ cat? cat : 'Whatsapp'} disponibles.`}    
+    />
+    <BreadcrumbJsonLd
+      itemListElements={[
+        {
+          position: 1,
+          name: 'Telegram',
+          item: `${process.env.PAGE_URL}/?r=Telegram`,
+        },
+        {
+          position: 2,
+          name: 'Whatsapp',
+          item: `${process.env.PAGE_URL}/?r=Whatsapp`,
+        },
+        {
+          position: 3,
+          name: 'Facebook',
+          item: `${process.env.PAGE_URL}/?r=Facebook`,
+        },
+        {
+          position: 4,
+          name: 'Reddit',
+          item: `${process.env.PAGE_URL}/?r=Reddit`,
+        },
+        {
+          position: 5,
+          name: 'Discord',
+          item: `${process.env.PAGE_URL}/?r=Discord`,
+        },
+        {
+          position: 6,
+          name: 'Signal',
+          item: `${process.env.PAGE_URL}/?r=Signal`,
+        },
+        {
+          position: 7,
+          name: 'Viber',
+          item: `${process.env.PAGE_URL}/?r=Viber`,
+        },
+      ]}
+    />
 
       <div className="app">
         <Header perfil={props.session ? props.session.user : ""} />
-
-        <ArticleJsonLd
-          url= {`${process.env.PAGE_URL}`}
-          title= {`${process.env.PAGE_URL} | Grupos Para Unirse.`}
-          images={[
-            `${process.env.PAGE_URL}/grupos.jpg`
-          ]}
-          
-          authorName={[
-            {
-              name: "Grupos Para Unirse",
-              url:`${process.env.PAGE_URL}`
-            }
-          ]}
-          publisherName="Grupos Para Unirse"
-          publisherLogo={`${process.env.PAGE_URL}/favicon.png`}
-          description={`¿Buscas Grupos de Redes Sociales para Unirte? En nuestra web GruposParaUnirse encontrarás una gran variedad de Grupos disponibles.`}
-        />
-
+      
         <main className="main">
           <ul className="listado-inicio">
             <li className="li-buscador">
@@ -371,7 +416,7 @@ console.log()
 
 export const getServerSideProps = async (context) => {
   try {
-    console.log(context.rawHeaders)
+    console.log(context.resolvedUrl)
 
     const session = await getSession(context);
     const { data } = await axios.get(
@@ -390,6 +435,7 @@ export const getServerSideProps = async (context) => {
         posts: data,
         session,
         context: context.query,
+        url: context.resolvedUrl
       },
     };
   } catch (error) {
