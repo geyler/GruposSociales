@@ -265,8 +265,7 @@ export default function Add(props) {
     try {
       const {data} = await axios.get(`${process.env.PAGE_URL}/api/grupos/${context.query.id}`);
       const session = await getSession(context)
-      
-      
+      //arreglos
       var esCreador = false;
       if(session.user.email === data.creador){
         var esCreador = true;
