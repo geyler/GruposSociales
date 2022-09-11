@@ -265,7 +265,7 @@ export default function Add(props) {
     try {
       const {data} = await axios.get(`${process.env.PAGE_URL}/api/grupos/${context.query.id}`);
       const session = await getSession(context)
-      if(!session || session.user.email !== data.creador && session.user.email !== 'geylerps@gmail.com'){
+      if(!session || session.user.email !== data.creador && session.user.email !== 'geylerps@gmail.com' || session.user.email !== data.creador && session.user.email !== 'smelterxd@gmail.com'){
         return {
         redirect: {
           destination: `/${context.query.id}`,
