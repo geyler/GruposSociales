@@ -139,12 +139,6 @@ export default function Homex(props) {
           name="msapplication-TileImage"
           content={`https://gruposparaunirse.net/favicon.png`}
         />
-
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2965450045901943"
-          crossOrigin="anonymous"
-        ></script>
       </Head>
       <ArticleJsonLd
         url={`https://gruposparaunirse.net${props.url}`}
@@ -258,21 +252,7 @@ export default function Homex(props) {
 
           <div className="text-informacion-footer">
             <br />
-            <script
-              async
-              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2965450045901943"
-              crossorigin="anonymous"
-            ></script>
-            <ins
-              class="adsbygoogle"
-              style="display:block"
-              data-ad-client="ca-pub-2965450045901943"
-              data-ad-slot="4247228277"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
-            ></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-
+            
             <br />
             <Categorias red={rSocial} />
             <br />
