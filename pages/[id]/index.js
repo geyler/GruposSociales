@@ -17,8 +17,6 @@ export default function Homex(props) {
   const post = props.posts;
   const cat = post?.red;
 
-  console.log(props);
-
   const [condiciones, setCondiciones] = useState(false);
   const [eliminarGrupo, seteliminarGrupo] = useState(false);
 
@@ -40,7 +38,6 @@ export default function Homex(props) {
       const res = await axios.put(`/api/grupos/eliminar`, {
         _id: props.posts._id,
       });
-      console.log(res.data.deletedCount);
       if (!res.data.deletedCount) {
         router.push("/admin");
       }

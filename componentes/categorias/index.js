@@ -1,7 +1,6 @@
 import Link from "next/link";
 const Categorias = function (props) {
   const red = props?.red;
-  console.log(props?.red)
   return (
     <>
       <h3 id="todas-las-categorias">Buscar un grupo por Red Social</h3>
