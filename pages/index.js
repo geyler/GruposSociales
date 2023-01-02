@@ -167,13 +167,13 @@ export default function Homex(props) {
         itemListElements={[
           {
             position: 1,
-            name: "Telegram",
-            item: `https://gruposparaunirse.net/?r=Telegram`,
+            name: "Grupos",
+            item: `https://gruposparaunirse.net/`,
           },
           {
             position: 2,
-            name: "Whatsapp",
-            item: `https://gruposparaunirse.net/?r=Whatsapp`,
+            name: `${cat ? cat : "Whatsapp"}`,
+            item: `https://gruposparaunirse.net/?r=${cat?cat:"Whatsapp"}`,
           },
         ]}
       />
